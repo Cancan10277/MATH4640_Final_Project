@@ -51,9 +51,9 @@ Title:
 ## Why it is used
 
 ## Limitation
-- **Memory Constraints**: QR iteration methods, particularly in subspace iteration methods like Jacobi-Davidson, often require restarts due to memory limitations. These restarts are necessary to restrict computational overhead and are especially crucial when computing several eigenvalues. However, restarting can negatively impact the convergence of these methods.
+- **Memory Constraints**: QR iteration methods, particularly in subspace iteration methods like Jacobi-Davidson, often require restarts due to memory limitations. These restarts are necessary to restrict computational overhead and are especially crucial when computing several eigenvalues. However, restarting can negatively impact the convergence of these methods. [1]
 
-- **Performance Issues with Large-Scale Matrices**: Traditional methods, including QR decomposition, face significant performance limitations when dealing with large-scale matrices. The computational complexity increases dramatically with the size of the matrix, making these methods less efficient for large datasets.
+- **Performance Issues with Large-Scale Matrices**: Traditional methods, including QR decomposition, face significant performance limitations when dealing with large-scale matrices. The computational complexity increases dramatically with the size of the matrix, making these methods less efficient for large datasets. [2]
 
 - **Convergence Rate**: The convergence rate of the QR iteration can be slow, especially for matrices with close or clustered eigenvalues. This can lead to increased computational time and resources.
 
@@ -62,3 +62,8 @@ Title:
 ## Strength
 
 ## Application
+
+## References
+
+1. Fokkema, D. R., Sleijpen, G., & Vorst, H. A. (Year). Jacobi-Davidson Style QR and QZ Algorithms for the Partial Reduction of Matrix Pencils. [Journal/Conference Name].
+2. Wang, C., Jalali, Z. S., Ding, C., Wang, Y., & Soundarajan, S. (2018). A Fast and Effective Memristor-Based Method for Finding Approximate Eigenvalues and Eigenvectors of Non-negative Matrices. In Proceedings of the 2018 IEEE Computer Society Annual Symposium on VLSI (ISVLSI) (pp. 1-6). IEEE.
