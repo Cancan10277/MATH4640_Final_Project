@@ -31,15 +31,6 @@ Title:
 - **Shift Strategies**: Incorporating shifts (like the Wilkinson shift) can improve convergence speed.
 - **Implicit QR**: A variant that avoids explicit computation of QR decomposition in each iteration for efficiency.
 
-### Applications
-- **Eigenvalue Problems**: Commonly used in solving eigenvalue problems in scientific and engineering computations.
-- **Dynamic Systems**: Useful for analyzing dynamic systems and assessing structural stability.
-- **Data Analysis**: Employed in techniques like principal component analysis (PCA).
-
-### Advantages and Limitations
-- **Advantages**: Reliable and efficient for most matrices, especially effective for symmetric or nearly symmetric matrices.
-- **Limitations**: Can be slow for large matrices and may require additional methods for certain matrix types.
-
 ### Modern Usage
 - **Software Implementations**: Available in scientific computing libraries like MATLAB, NumPy in Python, etc.
 - **Continued Relevance**: Remains a fundamental tool in numerical linear algebra with ongoing research for improvement.
@@ -68,6 +59,10 @@ Title:
 - **Maintaining Matrix Structure**: In certain cases, like with companion matrices, QR iteration can maintain the structural properties of matrices, allowing for efficient computation steps. [5]
 
 ## Application
+
+- **Eigenvalue Problems**: Commonly used in solving eigenvalue problems in scientific and engineering computations.
+- **Dynamic Systems**: Useful for analyzing dynamic systems and assessing structural stability.
+- **Data Analysis**: Employed in techniques like principal component analysis (PCA).
 
 ## References
 
