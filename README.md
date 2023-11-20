@@ -65,5 +65,5 @@ Title:
 
 ## References
 
-1. Fokkema, D. R., Sleijpen, G., & Vorst, H. A. (Year). Jacobi-Davidson Style QR and QZ Algorithms for the Partial Reduction of Matrix Pencils. [Journal/Conference Name].
-2. Wang, C., Jalali, Z. S., Ding, C., Wang, Y., & Soundarajan, S. (2018). A Fast and Effective Memristor-Based Method for Finding Approximate Eigenvalues and Eigenvectors of Non-negative Matrices. In Proceedings of the 2018 IEEE Computer Society Annual Symposium on VLSI (ISVLSI) (pp. 1-6). IEEE.
+1. Fokkema, D.R., Sleijpen, G.L., & Vorst, H.A. (1998). Jacobi-Davidson Style QR and QZ Algorithms for the Reduction of Matrix Pencils. SIAM J. Sci. Comput., 20, 94-125.
+2. Jalali, Z.S., Wang, C., Kearney, G., Yuan, G., Ding, C., Zhou, Y., Wang, Y., & Soundarajan, S. (2023). Memristor-Based Spectral Decomposition of Matrices and Its Applications. IEEE Transactions on Computers, 72, 1460-1472.
