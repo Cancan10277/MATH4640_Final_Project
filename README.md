@@ -1,4 +1,3 @@
-# MATH4640_Final_Project
 ---
 Name: Cancan Wang
 Topic: QR Iteration
