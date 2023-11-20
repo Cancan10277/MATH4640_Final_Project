@@ -23,7 +23,7 @@ Title:
 
 ### Process
 - **Initial Step**: Begin with a matrix $A_0$, often the original matrix or a modified form.
-- **Iterative Steps**: For each iteration 'k', decompose $A_{k-1}$ into $Q_kR_k$ and form $A_k = R_kQ_k$. This gradually forces $A_k$ to become upper triangular.
+- **Iterative Steps**: For each iteration `k`, decompose $A_{k-1}$ into $Q_kR_k$ and form $A_k = R_kQ_k$. This gradually forces $A_k$ to become upper triangular.
 - **Convergence**: The diagonal elements of the converging matrix approximate the eigenvalues of the original matrix.
 
 ### Variants
