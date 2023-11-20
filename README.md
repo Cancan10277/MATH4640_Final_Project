@@ -1,16 +1,16 @@
 # MATH4640_Final_Project
 ---
 Name: Cancan Wang
-Topic: Exterior Penalty Function Method
-Title: Background and Application of the Exterior Penalty Function Method
+Topic: QR Iteration
+Title: 
 ---
-# Exterior Penalty Function Method
+# QR Iteration
 
 ## Table of Contents
 - [Overview](#Overview)
 - [Background](#Background)
-- [Penalty Function Method Overview](#Penalty-Function-Method-Overview)
-- [Common Applications](#Common-Applications)
-- [Formulation](#Formulation)
-- [Penalty Function Options](#Penalty-Function-Options)
-- [References](#References)
+- [QR Iteration Overview](#QR-Iteration-Overview)
+- [How it is Worked](#How-it-works)
+- [Why it is used](#Why-it-is-used)
+- [Limitation](#Limitation)
+- [Strength](#Strength)
