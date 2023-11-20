@@ -51,6 +51,13 @@ Title:
 ## Why it is used
 
 ## Limitation
+- **Memory Constraints**: QR iteration methods, particularly in subspace iteration methods like Jacobi-Davidson, often require restarts due to memory limitations. These restarts are necessary to restrict computational overhead and are especially crucial when computing several eigenvalues. However, restarting can negatively impact the convergence of these methods.
+
+- **Performance Issues with Large-Scale Matrices**: Traditional methods, including QR decomposition, face significant performance limitations when dealing with large-scale matrices. The computational complexity increases dramatically with the size of the matrix, making these methods less efficient for large datasets.
+
+- **Convergence Rate**: The convergence rate of the QR iteration can be slow, especially for matrices with close or clustered eigenvalues. This can lead to increased computational time and resources.
+
+- **Complexity in Generalized Eigenproblems**: When dealing with generalized eigenproblems, the QR iteration method may require more sophisticated approaches or adaptations, which can complicate the implementation and increase the computational burden.
 
 ## Strength
 
