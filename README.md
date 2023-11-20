@@ -61,11 +61,11 @@ Title:
 
 ## Strength
 
-- **Efficiency with Large and Sparse Data**: QR iteration, especially in its higher-order forms, is efficient in handling large and sparse data tensors, avoiding intermediate memory explosion.[3]
+- **Efficiency with Large and Sparse Data**: QR iteration, especially in its higher-order forms, is efficient in handling large and sparse data tensors, avoiding intermediate memory explosion. [3]
 
-- **Controlled Precision Computing**: QR iteration is useful in controlled precision computing, particularly for small matrices, where it can compute eigenvalues with high accuracy.[4]
+- **Controlled Precision Computing**: QR iteration is useful in controlled precision computing, particularly for small matrices, where it can compute eigenvalues with high accuracy. [4]
 
-- **Maintaining Matrix Structure**: In certain cases, like with companion matrices, QR iteration can maintain the structural properties of matrices, allowing for efficient computation steps.[5]
+- **Maintaining Matrix Structure**: In certain cases, like with companion matrices, QR iteration can maintain the structural properties of matrices, allowing for efficient computation steps. [5]
 
 ## Application
 
