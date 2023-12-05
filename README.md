@@ -1,7 +1,7 @@
 ---
 Name: Cancan Wang
 Topic: QR Iteration
-Title: 
+Title: The Efficacy of QR Iteration in Numerical Linear Algebra
 ---
 # QR Iteration
 
