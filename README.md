@@ -39,12 +39,12 @@ The QR iteration method, as innovatively developed by Vandebril, Barel, and Mast
 
 ## How it is worked
 The process involves two key steps:
-1. **RQ-Factorization**: The initial matrix, denoted as \(A - \kappa I\), undergoes RQ-factorization, resulting in \(RQ\).
-2. **QR-Factorization**: Subsequently, the matrix \(A - \sigma I\) is multiplied by the conjugate transpose of \(Q\) from the first step, leading to a QR-factorization.
+1. **RQ-Factorization**: The initial matrix, denoted as $\(A - \kappa I\)$, undergoes RQ-factorization, resulting in $\(RQ\)$.
+2. **QR-Factorization**: Subsequently, the matrix $\(A - \sigma I\)$ is multiplied by the conjugate transpose of $\(Q\)$ from the first step, leading to a QR-factorization.
 
-This method stands out by leveraging the properties of the RQ-factorization of \(A - \kappa I\) to intelligently compute the QR-factorization of the transformed matrix. The transformation that defines the QR step is based on the unitary factor \(Q\) obtained in this process.
+This method stands out by leveraging the properties of the RQ-factorization of $\(A - \kappa I\)$ to intelligently compute the QR-factorization of the transformed matrix. The transformation that defines the QR step is based on the unitary factor $\(Q\)$ obtained in this process.
 
-A significant aspect of this method is its convergence properties. By applying multiple QR iterations with strategically chosen shifts (\(\sigma\)), the method converges to an upper triangular matrix, revealing the eigenvalues of the original matrix \(A\). This approach combines the QR and RQ methods, ensuring convergence at both ends of the matrix through a carefully selected function \(f(.)\) applied to \(A\). The function \(f(A) = (A - \sigma I)(A - \kappa I)^{-1}\) is identified as optimal for this purpose, avoiding the numerical challenges of inverting the factor \(A - \kappa I\). [1]
+A significant aspect of this method is its convergence properties. By applying multiple QR iterations with strategically chosen shifts $\sigma$, the method converges to an upper triangular matrix, revealing the eigenvalues of the original matrix \(A\). This approach combines the QR and RQ methods, ensuring convergence at both ends of the matrix through a carefully selected function \(f(.)\) applied to \(A\). The function \(f(A) = (A - \sigma I)(A - \kappa I)^{-1}\) is identified as optimal for this purpose, avoiding the numerical challenges of inverting the factor \(A - \kappa I\). [1]
 
 
 ## Why it is used
