@@ -38,7 +38,6 @@ The QR iteration method, as innovatively developed by Vandebril, Barel, and Mast
 ## Background
 
 ## How it is worked
-## QR Iteration Method Overview
 The process involves two key steps:
 1. **RQ-Factorization**: The initial matrix, denoted as \(A - \kappa I\), undergoes RQ-factorization, resulting in \(RQ\).
 2. **QR-Factorization**: Subsequently, the matrix \(A - \sigma I\) is multiplied by the conjugate transpose of \(Q\) from the first step, leading to a QR-factorization.
