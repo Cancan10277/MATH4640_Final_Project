@@ -52,7 +52,7 @@ The QR iteration method is primarily used for its ability to compute eigenvalues
 
 One of the critical aspects of the QR iteration method is its stability and reliability in numerical computations. The method avoids the direct inversion of the matrix factor, which can be numerically unstable, especially when the shift chosen is close to an eigenvalue of the matrix, leading to near-singular scenarios. Instead, the method employs a rational function-driven iteration, which maintains numerical stability and enhances the convergence properties.
 
-The convergence of the QR algorithm and its variants can be interpreted as subspace iteration, determined by polynomials in the matrices. This interpretation allows for the derivation of bounds on the convergence of these algorithms, making the QR iteration method a robust choice for eigenvalue computations.
+The convergence of the QR algorithm and its variants can be interpreted as subspace iteration, determined by polynomials in the matrices. This interpretation allows for the derivation of bounds on the convergence of these algorithms, making the QR iteration method a robust choice for eigenvalue computations. [1]
 
 ## Limitation
 - **Memory Constraints**: QR iteration methods, particularly in subspace iteration methods like Jacobi-Davidson, often require restarts due to memory limitations. These restarts are necessary to restrict computational overhead and are especially crucial when computing several eigenvalues. However, restarting can negatively impact the convergence of these methods. [2]
