@@ -27,23 +27,6 @@ The algorithm's computational efficiency is greatly enhanced by first reducing a
 
 Today, QR Iteration remains the most prevalent method for full eigenvalue computation, valued for its robustness and versatility. Its slow convergence rate for some matrices is often offset by its comprehensive applicability and the significant improvements it offers over traditional methods for dense matrices of modest size [5].
 
-### Basic Concept
-- **Matrix Decomposition**: Involves decomposing a matrix `A` into an orthogonal matrix `Q` and an upper triangular matrix `R`.
-- **Iteration Process**: The algorithm iteratively applies QR decomposition and then multiplies the resulting components in reverse order (forming `RQ`). This is repeated until the matrix converges to a nearly triangular form.
-
-### Process
-- **Initial Step**: Begin with a matrix $A_0$, often the original matrix or a modified form.
-- **Iterative Steps**: For each iteration `k`, decompose $A_{k-1}$ into $Q_kR_k$ and form $A_k = R_kQ_k$. This gradually forces $A_k$ to become upper triangular.
-- **Convergence**: The diagonal elements of the converging matrix approximate the eigenvalues of the original matrix.
-
-### Variants
-- **Shift Strategies**: Incorporating shifts (like the Wilkinson shift) can improve convergence speed.
-- **Implicit QR**: A variant that avoids explicit computation of QR decomposition in each iteration for efficiency.
-
-### Modern Usage
-- **Software Implementations**: Available in scientific computing libraries like MATLAB, NumPy in Python, etc.
-- **Continued Relevance**: Remains a fundamental tool in numerical linear algebra with ongoing research for improvement.
-
 ## How it is worked
 The process involves two key steps:
 1. **RQ-Factorization**: The initial matrix, denoted as $\(A - \kappa I\)$, undergoes RQ-factorization, resulting in $\(RQ\)$.
