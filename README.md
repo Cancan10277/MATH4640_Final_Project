@@ -8,15 +8,14 @@ Title:
 ## Table of Contents
 - [Overview](#Overview)
 - [Background](#Background)
-- [QR Iteration Overview](#QR-Iteration-Overview)
-- [How it is Worked](#How-it-works)
+- [How it is Worked](#How-it-is-works)
 - [Why it is used](#Why-it-is-used)
 - [Limitation](#Limitation)
 - [Strength](#Strength)
 - [Application](#Application)
 
 ## Overview
-The QR iteration method, as innovatively developed by Vandebril, Barel, and Mastronardi, introduces a novel approach to eigenvalue computation. This method uniquely employs a QR iteration with a rational function, allowing for convergence at both the top and bottom of the matrix. 
+QR Iteration stands as a pivotal technique in the sphere of numerical linear algebra, specifically employed for determining the eigenvalues of matrices. It is categorized under iterative methods due to its process of sequentially honing in on the solution via repeated computational cycles. The QR Iteration technique systematically decomposes a matrix into two components: an orthogonal matrix (Q) and an upper triangular matrix (R). Through successive iterations, it refines the approximation of a matrix's eigenvalues. The iterative aspect of the method highlights its procedural progression, which incrementally edges closer to the matrix’s actual eigenvalues. This iterative procedure is especially advantageous for full, dense matrices where alternative eigenvalue calculation methods may be ineffective or slow to converge. The QR Iteration method exemplifies the intricate synergy of linear algebra operations in the realm of numerical computations.
 
 ## Background
 Eigenvalues are pivotal in the field of linear algebra, serving as a cornerstone for understanding linear transformations and their applications in stability analyses, physics, and engineering. Traditional approaches to computing eigenvalues, like power iteration or inverse iteration, are suitable for scenarios involving large sparse matrices or when targeting the extreme eigenvalues. Yet, these methods have limitations, especially when a full eigenvalue spectrum of a matrix is required [1].
