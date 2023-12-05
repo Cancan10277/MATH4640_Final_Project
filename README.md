@@ -65,7 +65,7 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
 
 ## Strength
 
-- **Efficiency with Large and Sparse Data**: QR iteration, especially in its higher-order forms, is efficient in handling large and sparse data tensors, avoiding intermediate memory explosion. [4]
+- **Efficiency with Large and Sparse Data**: QR iteration, especially in its higher-order forms, is efficient in handling large and sparse data tensors, avoiding intermediate memory explosion. [4] This is achieved through a streamlined orthogonalization process in each iteration, circumventing the need for memory-intensive operations like singular value decomposition. As a result, the QR iteration method is not only memory-efficient but also computationally faster, making it highly suitable for large-scale data analysis in fields such as big data analytics, scientific computing, and machine learning, where managing large, sparse matrices is essential. This efficiency in processing complex data structures positions the QR iteration as a valuable tool in numerical linear algebra and tensor computations.
 
 - **Controlled Precision Computing**: QR iteration is useful in controlled precision computing, particularly for small matrices, where it can compute eigenvalues with high accuracy. [5]
 
