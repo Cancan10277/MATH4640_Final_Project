@@ -18,6 +18,7 @@ Title:
 ## Overview
 The QR iteration method, as innovatively developed by Vandebril, Barel, and Mastronardi, introduces a novel approach to eigenvalue computation. This method uniquely employs a QR iteration with a rational function, allowing for convergence at both the top and bottom of the matrix. 
 
+## Background
 ### Basic Concept
 - **Matrix Decomposition**: Involves decomposing a matrix `A` into an orthogonal matrix `Q` and an upper triangular matrix `R`.
 - **Iteration Process**: The algorithm iteratively applies QR decomposition and then multiplies the resulting components in reverse order (forming `RQ`). This is repeated until the matrix converges to a nearly triangular form.
@@ -34,8 +35,6 @@ The QR iteration method, as innovatively developed by Vandebril, Barel, and Mast
 ### Modern Usage
 - **Software Implementations**: Available in scientific computing libraries like MATLAB, NumPy in Python, etc.
 - **Continued Relevance**: Remains a fundamental tool in numerical linear algebra with ongoing research for improvement.
-
-## Background
 
 ## How it is worked
 The process involves two key steps:
