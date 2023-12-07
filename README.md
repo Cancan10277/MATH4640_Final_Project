@@ -8,7 +8,7 @@ Title: The Efficacy of QR Iteration in Numerical Linear Algebra
 ## Table of Contents
 - [Overview](#Overview)
 - [Background](#Background)
-- [How it is Worked](#How-it-is-works)
+- [How it is Worked](#How-it-is-Worked)
 - [Why it is used](#Why-it-is-used)
 - [Limitation](#Limitation)
 - [Strength](#Strength)
