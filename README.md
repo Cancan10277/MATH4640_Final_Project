@@ -49,13 +49,17 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
 1. **Matrix to Decompose**: Consider a 2x2 matrix $A$.
   $\vec{A} = \begin{bmatrix} a b \\\ c d \end{bmatrix}$
 
-2. **Initial Decomposition**: Perform the QR decomposition of $A$ manually or using a standard algorithm to get $Q$ (an orthogonal matrix) and $R$ (an upper triangular matrix).
+```math
+\begin{bmatrix}X\\Y\end{bmatrix}
+```
 
-3. **Form New Matrix**: Multiply $R$ and $Q$ (in this order) to get a new matrix $A_1 = RQ$.
+3. **Initial Decomposition**: Perform the QR decomposition of $A$ manually or using a standard algorithm to get $Q$ (an orthogonal matrix) and $R$ (an upper triangular matrix).
 
-4. **Iterate**: Repeat the QR decomposition for $A_1$, and form a new matrix $A_2$ from the resulting $Q$ and $R$.
+4. **Form New Matrix**: Multiply $R$ and $Q$ (in this order) to get a new matrix $A_1 = RQ$.
 
-5. **Convergence**: Continue this process. The matrix $A_n$ will converge to an upper triangular matrix as $n$ goes to infinity. The diagonal elements of this matrix are the eigenvalues of $A$.
+5. **Iterate**: Repeat the QR decomposition for $A_1$, and form a new matrix $A_2$ from the resulting $Q$ and $R$.
+
+6. **Convergence**: Continue this process. The matrix $A_n$ will converge to an upper triangular matrix as $n$ goes to infinity. The diagonal elements of this matrix are the eigenvalues of $A$.
 
 - **QR Iteration with Shifts for a 3x3 Matrix**
 1. **Initial Matrix**: Start with a 3x3 matrix $A$.
