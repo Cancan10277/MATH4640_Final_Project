@@ -47,10 +47,10 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
 ## Examples
 - **Basic QR Iteration for a 2x2 Matrix**
 1. **Matrix to Decompose**: Consider a 2x2 matrix $A$.
-  $\vec{A} = \begin{bmatrix} a b \\\ c d \end{bmatrix}$
+
 
 ```math
-\begin{bmatrix}X\\Y\end{bmatrix}
+\begin{bmatrix}a b\\c d\end{bmatrix}
 ```
 
 3. **Initial Decomposition**: Perform the QR decomposition of $A$ manually or using a standard algorithm to get $Q$ (an orthogonal matrix) and $R$ (an upper triangular matrix).
@@ -70,7 +70,9 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
    g & h & i
    \end{pmatrix}
    $
-
+```math
+\begin{bmatrix}a b c\\d e f\\g h i\end{bmatrix}
+```
 2. **Choose a Shift**: Select a shift value, often the bottom-right element of $A$, say $\( \mu = i \)$.
 
 3. **Shift and Decompose**: Subtract $mu I $ from $A$, and perform QR decomposition on $\( A - \mu I \)$.
