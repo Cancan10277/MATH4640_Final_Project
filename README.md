@@ -50,7 +50,7 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
 
 
 ```math
-\begin{bmatrix}a b\\c d\end{bmatrix}
+\begin{bmatrix}a &b\\c &d\end{bmatrix}
 ```
 
 3. **Initial Decomposition**: Perform the QR decomposition of $A$ manually or using a standard algorithm to get $Q$ (an orthogonal matrix) and $R$ (an upper triangular matrix).
@@ -71,7 +71,7 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
    \end{pmatrix}
    $
 ```math
-\begin{bmatrix}a b c\\d e f\\g h i\end{bmatrix}
+\begin{bmatrix}a&b & c\\d &e &f\\g &h &i\end{bmatrix}
 ```
 2. **Choose a Shift**: Select a shift value, often the bottom-right element of $A$, say $\( \mu = i \)$.
 
