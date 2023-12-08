@@ -47,34 +47,34 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
 ## Examples
 - **Basic QR Iteration for a 2x2 Matrix**
 1. **Matrix to Decompose**: Consider a 2x2 matrix \(A\).
-  $ \[
+  $ 
    A = \begin{pmatrix}
    a & b \\
    c & d
    \end{pmatrix}
-   \]$
+   $
 
-2. **Initial Decomposition**: Perform the QR decomposition of $\(A\)$ manually or using a standard algorithm to get $\(Q\)$ (an orthogonal matrix) and $\(R\)$ (an upper triangular matrix).
+2. **Initial Decomposition**: Perform the QR decomposition of $A$ manually or using a standard algorithm to get $Q$ (an orthogonal matrix) and $R$ (an upper triangular matrix).
 
-3. **Form New Matrix**: Multiply $\(R\)$ and $\(Q\)$ (in this order) to get a new matrix $\(A_1 = RQ\)$.
+3. **Form New Matrix**: Multiply $R$ and $Q$ (in this order) to get a new matrix $A_1 = RQ$.
 
-4. **Iterate**: Repeat the QR decomposition for $\(A_1\)$, and form a new matrix $\(A_2\)$ from the resulting $\(Q\)$ and $\(R\)$.
+4. **Iterate**: Repeat the QR decomposition for $A_1$, and form a new matrix $A_2$ from the resulting $Q$ and $R$.
 
-5. **Convergence**: Continue this process. The matrix $\(A_n\)$ will converge to an upper triangular matrix as $\(n\)$ goes to infinity. The diagonal elements of this matrix are the eigenvalues of $\(A\)$.
+5. **Convergence**: Continue this process. The matrix $A_n$ will converge to an upper triangular matrix as $n$ goes to infinity. The diagonal elements of this matrix are the eigenvalues of $A$.
 
 - **QR Iteration with Shifts for a 3x3 Matrix**
-1. **Initial Matrix**: Start with a 3x3 matrix \(A\).
-   $\[
+1. **Initial Matrix**: Start with a 3x3 matrix $A$.
+   $
    A = \begin{pmatrix}
    a & b & c \\
    d & e & f \\
    g & h & i
    \end{pmatrix}
-   \]$
+   $
 
-2. **Choose a Shift**: Select a shift value, often the bottom-right element of $\(A\)$, say $\( \mu = i \)$.
+2. **Choose a Shift**: Select a shift value, often the bottom-right element of $A$, say $\( \mu = i \)$.
 
-3. **Shift and Decompose**: Subtract $\( \mu I \)$ from $\(A\)$, and perform QR decomposition on $\( A - \mu I \)$.
+3. **Shift and Decompose**: Subtract $mu I $ from $A$, and perform QR decomposition on $\( A - \mu I \)$.
 
 4. **Update Matrix**: Form a new matrix $\( A_1 = RQ + \mu I \)$.
 
