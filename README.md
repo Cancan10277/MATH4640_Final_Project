@@ -46,7 +46,7 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
 
 ## Examples
 - **Basic QR Iteration for a 2x2 Matrix**
-1. **Matrix to Decompose**: Consider a 2x2 matrix $A$.
+1. **Matrix to Decompose**: Consider a 2x2 matrix $A$:
 
 
 ```math
@@ -62,14 +62,7 @@ The convergence of the QR algorithm and its variants can be interpreted as subsp
 6. **Convergence**: Continue this process. The matrix $A_n$ will converge to an upper triangular matrix as $n$ goes to infinity. The diagonal elements of this matrix are the eigenvalues of $A$.
 
 - **QR Iteration with Shifts for a 3x3 Matrix**
-1. **Initial Matrix**: Start with a 3x3 matrix $A$.
-   $
-   A = \begin{pmatrix}
-   a & b & c \\
-   d & e & f \\
-   g & h & i
-   \end{pmatrix}
-   $
+1. **Initial Matrix**: Start with a 3x3 matrix $A$:
 ```math
 \begin{bmatrix}a&b & c\\d &e &f\\g &h &i\end{bmatrix}
 ```
