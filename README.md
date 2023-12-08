@@ -10,17 +10,18 @@ Title: The Efficacy of QR Iteration in Numerical Linear Algebra
 - [Background](#Background)
 - [How it is Worked](#How-it-is-Worked)
 - [Why it is used](#Why-it-is-used)
+- [Examples](Examples)
 - [Limitation](#Limitation)
 - [Strength](#Strength)
 - [Application](#Application)
 
 ## Overview
-QR Iteration stands as a pivotal technique in the sphere of numerical linear algebra, specifically employed for determining the eigenvalues of matrices. It is categorized under iterative methods due to its process of sequentially honing in on the solution via repeated computational cycles. The QR Iteration technique systematically decomposes a matrix into two components: an orthogonal matrix (Q) and an upper triangular matrix (R). Through successive iterations, it refines the approximation of a matrix's eigenvalues. The iterative aspect of the method highlights its procedural progression, which incrementally edges closer to the matrix’s actual eigenvalues. This iterative procedure is especially advantageous for full, dense matrices where alternative eigenvalue calculation methods may be ineffective or slow to converge. The QR Iteration method exemplifies the intricate synergy of linear algebra operations in the realm of numerical computations.
+QR Iteration is a pivotal technique in numerical linear algebra, specifically employed for determining the eigenvalues of matrices. It is categorized under iterative methods due to its process of sequentially honing in on the solution via repeated computational cycles. The QR Iteration technique systematically decomposes a matrix into two components: an orthogonal matrix (Q) and an upper triangular matrix (R). Through successive iterations, it refines the approximation of a matrix's eigenvalues. The iterative aspect of the method highlights its procedural progression, which incrementally edges closer to the matrix’s actual eigenvalues. This iterative procedure is especially advantageous for full, dense matrices where alternative eigenvalue calculation methods may be ineffective or slow to converge. The QR Iteration method exemplifies the intricate synergy of linear algebra operations in the realm of numerical computations.
 
 ## Background
-Eigenvalues are pivotal in the field of linear algebra, serving as a cornerstone for understanding linear transformations and their applications in stability analyses, physics, and engineering. Traditional approaches to computing eigenvalues, like power iteration or inverse iteration, are suitable for scenarios involving large sparse matrices or when targeting the extreme eigenvalues. Yet, these methods have limitations, especially when a full eigenvalue spectrum of a matrix is required [1].
+Eigenvalues are essential in the field of linear algebra, serving as a cornerstone for understanding linear transformations and their applications in stability analyses, physics, and engineering. Traditional approaches to computing eigenvalues, like power iteration or inverse iteration, are suitable for scenarios involving large sparse matrices or when targeting the extreme eigenvalues. Yet, these methods have limitations, especially when a full eigenvalue spectrum of a matrix is required [1].
 
-Enter QR Iteration, an eigenvalue algorithm devised independently by John G. F. Francis and Vera N. Kublanovskaya in the late 1950s [2]. This method leverages the concept that similar matrices share identical eigenvalues and eigenvectors, forming the foundation of its iterative process. QR Iteration is now the method of choice for obtaining a complete set of eigenvalues, particularly for full, dense matrices [3].
+Enter QR Iteration, an eigenvalue algorithm devised independently by John G. F. Francis and Vera N. Kublanovskaya in the late 1950s [2]. This method leverages the concept that similar matrices share identical eigenvalues and eigenvectors, forming the foundation of its iterative process. Currently, QR Iteration is the method of choice to obtain a complete set of eigenvalues, particularly for full, dense matrices [3].
 
 The algorithm's computational efficiency is greatly enhanced by first reducing a matrix to Hessenberg form, which trims the operational complexity from cubic to quadratic relative to matrix size. This pre-processing step renders QR Iteration not just faster but also applicable to a broader range of matrices, including non-symmetric and non-positive definite ones [4].
 
@@ -42,6 +43,25 @@ The QR iteration method is primarily used for its ability to compute eigenvalues
 One of the critical aspects of the QR iteration method is its stability and reliability in numerical computations. The method avoids the direct inversion of the matrix factor, which can be numerically unstable, especially when the shift chosen is close to an eigenvalue of the matrix, leading to near-singular scenarios. Instead, the method employs a rational function-driven iteration, which maintains numerical stability and enhances the convergence properties.
 
 The convergence of the QR algorithm and its variants can be interpreted as subspace iteration, determined by polynomials in the matrices. This interpretation allows for the derivation of bounds on the convergence of these algorithms, making the QR iteration method a robust choice for eigenvalue computations. [6]
+
+## Examples
+- **Basic QR Iteration for a 2x2 Matrix**
+1. **Matrix to Decompose**: Consider a 2x2 matrix \(A\).
+   \[
+   A = \begin{pmatrix}
+   a & b \\
+   c & d
+   \end{pmatrix}
+   \]
+
+2. **Initial Decomposition**: Perform the QR decomposition of \(A\) manually or using a standard algorithm to get \(Q\) (an orthogonal matrix) and \(R\) (an upper triangular matrix).
+
+3. **Form New Matrix**: Multiply \(R\) and \(Q\) (in this order) to get a new matrix \(A_1 = RQ\).
+
+4. **Iterate**: Repeat the QR decomposition for \(A_1\), and form a new matrix \(A_2\) from the resulting \(Q\) and \(R\).
+
+5. **Convergence**: Continue this process. The matrix \(A_n\) will converge to an upper triangular matrix as \(n\) goes to infinity. The diagonal elements of this matrix are the eigenvalues of \(A\).  
+
 
 ## Limitation
 - **Memory Constraints**:
@@ -68,11 +88,11 @@ QR iteration, especially in its higher-order forms, is efficient in handling lar
 
 - **Controlled Precision Computing**:
 
-QR iteration is useful in controlled precision computing, particularly for small matrices, where it can compute eigenvalues with high accuracy. [10] This precision stems from the method's ability to perform iterative calculations with a high degree of numerical stability. By employing a systematic approach to convergence, the QR iteration method ensures that each step is calculated with controlled precision, minimizing computational errors. This aspect is crucial in applications where even minor inaccuracies can lead to significant deviations in results, such as in scientific simulations and financial modeling. The method's inherent stability and precision make it a preferred choice for scenarios demanding exactness and reliability in computations, underscoring its strength in applications where precision is paramount.
+QR iteration is useful in controlled precision computing, particularly for small matrices, where it can compute eigenvalues with high accuracy [10]. This precision stems from the method's ability to perform iterative calculations with a high degree of numerical stability. By utilizing a systematic approach to convergence, the QR iteration method ensures that each step is calculated with controlled precision, minimizing computational errors. This aspect is crucial in applications where even minor inaccuracies can lead to significant deviations in results, such as in scientific simulations and financial modeling. The method's inherent stability and precision make it a preferred choice for scenarios demanding exactness and reliability in computations, underscoring its strength in applications where precision is paramount.
 
 - **Maintaining Matrix Structure**:
 
-The QR iteration method is highly regarded for its ability to maintain the structural properties of matrices, a feature particularly beneficial in cases involving companion matrices. [11] This capability ensures that the intrinsic structure of the original matrix is preserved throughout the iteration process, leading to more efficient computation steps. By retaining the matrix structure, the QR iteration method enhances computational efficiency and accuracy, especially in algorithms where the structural integrity of the matrix plays a critical role in the outcome. This attribute is particularly valuable in numerical methods and applications where the preservation of matrix characteristics, such as sparsity or symmetry, is essential for the accuracy and efficiency of the computational process. The QR iteration's proficiency in maintaining matrix structure makes it a robust and reliable tool in advanced numerical analysis and linear algebra.
+The QR iteration method is highly regarded for its ability to maintain the structural properties of matrices, a feature particularly beneficial in cases involving companion matrices [11]. This capability ensures that the intrinsic structure of the original matrix is preserved throughout the iteration process, leading to more efficient computation steps. By retaining the matrix structure, the QR iteration method enhances computational efficiency and accuracy, especially in algorithms where the structural integrity of the matrix plays a critical role in the outcome. This attribute is particularly valuable in numerical methods and applications where the preservation of matrix characteristics, such as sparsity or symmetry, is essential for the accuracy and efficiency of the computational process. The QR iteration's proficiency in maintaining matrix structure makes it a robust and reliable tool in advanced numerical analysis and linear algebra.
 
 ## Application
 
@@ -96,7 +116,6 @@ The QR iteration method is highly regarded for its ability to maintain the struc
 3. Stanford University. The Practical QR Algorithm. https://web.stanford.edu/class/cme335/lecture7.pdf.
 4. SIAM Review. Understanding the QR Algorithm. https://epubs.siam.org/doi/abs/10.1137/1034116.
 5. JSTOR. Understanding the QR Algorithm. https://www.jstor.org/stable/2032911.
-
 6. Vandebril, R., Barel, M.V., & Mastronardi, N. (2008). Rational QR-iteration without inversion. Numerische Mathematik, 110, 561-575.
 7. Fokkema, D.R., Sleijpen, G.L., & Vorst, H.A. (1998). Jacobi-Davidson Style QR and QZ Algorithms for the Reduction of Matrix Pencils. SIAM J. Sci. Comput., 20, 94-125.
 8. Jalali, Z.S., Wang, C., Kearney, G., Yuan, G., Ding, C., Zhou, Y., Wang, Y., & Soundarajan, S. (2023). Memristor-Based Spectral Decomposition of Matrices and Its Applications. IEEE Transactions on Computers, 72, 1460-1472.
